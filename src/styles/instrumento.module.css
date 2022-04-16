@@ -1,0 +1,28 @@
+.margen{
+    margin:32px;
+}
+.container{
+    width: 100%;
+    border-bottom: solid 1px lightgray;
+    display: flex;
+    gap: 48px;
+    margin-bottom: 8px;
+}
+
+.instrumentoName {
+    font-weight: normal;
+}
+.vendidos {
+    font-weight: lighter;
+}
+.envioGratis {
+    color: rgb(21, 176, 21);
+    display: flex;
+}
+.envioPago {
+    color: rgb(242, 159, 6);
+}
+.link{
+    text-decoration: none;
+    color: black;
+}

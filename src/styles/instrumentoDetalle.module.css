@@ -1,0 +1,47 @@
+.container{
+    margin: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion{
+    width: 328px;
+}
+.section{
+    border-left:solid 1px lightgray;
+    border-right:solid 1px lightgray;
+    padding: 16px 32px;
+}
+.vendidos{
+    font-weight: lighter;
+}
+.name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    width: 236px;
+}
+.price{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;   
+    font-weight: normal;
+}
+.envioGratis {
+    color: rgb(21, 176, 21);
+    display: flex;
+}
+.envioPago {
+    color: rgb(242, 159, 6);
+}
+.boton{
+    background-color: white;
+    color: rgb(28, 139, 218);
+    border-color: rgb(28, 139, 218);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.boton:hover{
+    background-color: rgb(28, 139, 218);
+    color: white;
+}
