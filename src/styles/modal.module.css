@@ -1,0 +1,39 @@
+.container{
+    width: 40vw;
+    position: fixed;
+}
+.container::backdrop {
+    color: black;
+  }
+.formStyles{
+    display:flex;
+    gap:8px;
+}
+.titleStyles{
+    color: rgb(28, 139, 218);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputStyle{
+    display: block;
+    padding: 0 8px;
+    margin-bottom: 8px;
+}
+.closeButton{
+    position:absolute;
+    right:1rem;
+    color:white;
+    background-color: red;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.submitButton{
+    background-color: rgb(28, 139, 218);
+    color: white;
+    border-color: black;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    text-align:center;
+}

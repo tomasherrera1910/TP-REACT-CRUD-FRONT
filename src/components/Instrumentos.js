@@ -1,16 +1,21 @@
-import json from '../data/instrumentos.json'
+import {useState, useEffect} from 'react'
+import getInstrumentos from '../utils/getInstrumentos'
 import {Instrumento} from './Instrumento'
-export function Instrumentos(){
-    
-    const {instrumentos} = json
 
+export function Instrumentos(){
+    const [instrumentos, setInstrumentos] = useState([])
+    useEffect(() => {
+        getInstrumentos()
+        .then(setInstrumentos)
+    },[])
+    
     return(
         <div>
             {instrumentos.map(instrumento => (
                 <Instrumento 
                 key={instrumento.id} 
                 id={instrumento.id}
-                instrumento={instrumento.instrumento}
+                nombre={instrumento.nombre}
                 imagen={instrumento.imagen}
                 precio={instrumento.precio}
                 cantidadVendida={instrumento.cantidadVendida}
@@ -19,4 +24,4 @@ export function Instrumentos(){
             ))}
         </div>
     )
-}
+} 

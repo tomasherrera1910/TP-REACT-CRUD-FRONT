@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.inputSearch{
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 40vw;
+}
+
+.buttonMostrar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    color: rgb(28, 139, 218);
+    padding: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.buttonMostrar:hover{
+    background-color: rgb(28, 139, 218);
+    color: white;
+}
